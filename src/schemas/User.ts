@@ -10,7 +10,7 @@ export interface UserInterface extends Document {
 
 const UserSchema: Schema<UserInterface> = new Schema(
   {
-    matricula: { type: Number, required: true },
+    matricula: { type: Number, required: true, unique: true },
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
