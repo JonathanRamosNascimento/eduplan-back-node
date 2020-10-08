@@ -6,6 +6,7 @@ const routes = Router();
 
 routes.get('/users', UserController.index);
 routes.get('/user', UserController.show);
-routes.post('/users', UserController.store);
+routes.delete('/user', UserController.delete);
+routes.post('/user', UserController.store);
 
 export default routes;
